@@ -1,0 +1,270 @@
+form.registro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 24px auto;
+    background-color: #666;
+    width: 60%;
+}
+
+.formulario_grupo{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+}
+
+.formulario_grupo input:focus{
+    outline: none;
+    border: 1px solid green;
+}
+
+.formulario_grupo input:hover{
+    box-shadow: 6px 6px 12px #c5c5c5,
+    -6px -6px 12px #ffffff;
+}
+
+.boton_primario{
+    margin-top: 24px;
+    color: #090909;
+    padding: 0.7em 1.7em;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: #e8e8e8;
+    border: 1px solid #e8e8e8;
+    transition: all .3s;
+    box-shadow: 6px 6px 12px #c5c5c5,
+                -6px -6px 12px #ffffff;
+}
+
+
+.boton_primario:hover {
+    background-color: #1259c3;
+    color: #e8e8e8;
+   }
+   
+
+* {box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+main{
+    width: 90%;
+    margin: auto;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+header{
+    background-color: #EAC926;
+    font-size: 12px;
+}
+
+h3{
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+p{
+    font-size: 12px;
+}
+
+.encabezado_cartel{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.encabezado_secundario{
+    display: none;
+}
+
+.articulos_visita{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.articulos_ofertas{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.burger-menu{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.fas.fa-bars{
+    font-size: 20px;
+    color: #ebebeb;
+    background-color: #1259c3;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.footer_titulo{
+    color: #666;
+    width: 30%;
+    text-align: center;
+    margin: 0%;
+}
+
+.ultima_fila{
+    text-align: center;
+}
+
+.fa-solid.fa-credit-card{
+    size: 2em;
+    margin-bottom: 10p;
+    color: #1259c3;
+}
+
+.fa-solid.fa-gift{
+    size: 2em;
+    margin-bottom: 10p;
+    color: #1259c3;
+}
+
+.fa-solid.fa-user-shield{
+    size: 2em;
+    margin-bottom: 10p;
+    color: #1259c3;
+}
+
+.fas.fa-truck{
+display: block;
+font-size: 16px;
+padding: 5px;
+width: 30px;
+height: 30px;
+border: 1px solid #39b54a;
+color: #39b54a;
+background-color: #FFF;
+border-radius: 50%;
+position: absolute;
+right: 20px;
+top: -15px;
+}
+
+.precios{
+    font-size: 18px;
+    display: inline-block;
+    margin-left: 12px;
+}
+
+.descuentos{
+    font-size: 16px;
+    color: #39b54a;
+    display: inline-block;
+    margin-left: 8px;
+}
+
+.descripciones{
+    font-size: 16px;
+    margin-top: 20px;
+    display: none;
+    margin-left: 12px;
+}
+    
+.imagen_banner{
+    width: 100%;
+}
+
+.imagen_producto{
+    width: 100%;
+}
+
+.imagen_tarjeta{
+    position: relative;
+    width: 70%;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    border: #000 solid 1px;
+    padding: 15px;
+}
+
+.articulo_datos{
+    border-top: #000 solid 1px;
+    position: relative;
+    padding: 12px;
+}
+
+
+@media (min-width: 426px){
+.imagen_tarjeta{
+    width: 45%;
+}
+.burger-menu{
+display: none;
+}
+nav{
+    display: flex;
+    width: 100%;
+    padding: 15%;
+}
+.descripciones{
+    display: block;
+    visibility: hidden;
+  }
+.imagen_tarjeta:hover .descripciones{
+    visibility: visible;
+}
+.imagen_tarjeta:hover .fas.fa-truck{
+    transform: rotate(-90deg);
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    transition: transform 1s;
+}
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.encabezado_principal{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.logo{
+    margin-left: 12px;
+    margin-top: 12px;
+    width: 50%;
+}
+
+.barra_busqueda{
+    width: 50%;
+}
+.encabezado_secundario{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    padding: 15%;
+    width: 100%;
+}
+.encabezado_secuntario_izda{
+    width: 20%;
+}
+.encabezado_secuntario_dcha{
+    width: 20%;
+}
+}
+
+@media (min-width: 769px){
+
+}
+    
